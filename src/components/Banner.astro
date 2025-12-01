@@ -19,6 +19,11 @@ import { Image } from "astro:assets";
   class="relative h-[50dvh] lg:h-dvh w-full overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600"
   aria-label="Image carousel"
 >
+  <div
+    class="w-full bg-yellow-300 text-black text-center py-2.5 font-bold z-50 mt-16"
+  >
+    This site is under development
+  </div>
   <div id="carousel" class="relative w-full h-full hidden lg:block">
     <div class="slide absolute top-1/2 left-1/2 h-fit">
       <Image
@@ -72,7 +77,6 @@ import { Image } from "astro:assets";
     </div>
   </div>
   <div id="carousel-mobile" class="relative w-full h-full block lg:hidden">
-    mobile
     <div class="mslide absolute top-1/2 left-1/2 h-fit">
       <Image
         src={mimg1}
