@@ -1,16 +1,30 @@
 ---
+import "../styles/global.css";
+// Import images
 
+// Import Astro Image component
+import { Image } from "astro:assets";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Aboutus from "../components/Aboutus.astro";
+import Services from "../components/Services.astro";
+import Head from "../components/head.astro";
+import Banner from "../components/Banner.astro";
+import Reviews from "../components/Reviews.astro";
+import Social from "../components/Social.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <Head />
+  <body class="m-0 font-sans">
+    <Header />
+    <main id="main-content" role="main">
+      <Banner />
+      <Aboutus />
+      <Social />
+      <Services />
+      <Reviews />
+    </main>
+	<Footer />
+  </body>
 </html>
