@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "local-build": "astro build",
+    "postbuild": "rm -rf docs && cp -r dist docs",
     "preview": "astro preview",
     "astro": "astro"
   },
