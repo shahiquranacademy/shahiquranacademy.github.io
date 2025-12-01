@@ -1,0 +1,122 @@
+---
+import { Image } from "astro:assets";
+
+import quranRecitation from "../assets/quran_recitation.png";
+import quranTajweed from "../assets/quran_tajweed.png";
+import quranMemorization from "../assets/quran_memorization.png";
+import nooraniQaida from "../assets/noorani_qaida.png";
+---
+
+<section
+  class="py-12 bg-gray-100 text-center"
+  aria-labelledby="services-heading"
+>
+  <h2 id="services-heading" class="text-3xl font-bold mb-10 text-gray-900">
+    Our Services
+  </h2>
+
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4"
+  >
+    <!-- Quran Recitation -->
+    <article
+      data-service-card
+      class="bg-white p-5 rounded-lg shadow-md focus-within:ring-2 ring-blue-600"
+      aria-labelledby="service-recitation"
+    >
+      <Image
+        src={quranRecitation}
+        alt="Quran recitation class illustration"
+        format="webp"
+        width={600}
+        height={600}
+        class="w-full h-48 object-cover rounded-md mb-4"
+        loading="lazy"
+      />
+      <h3
+        id="service-recitation"
+        class="text-xl font-semibold text-gray-900 mb-2"
+      >
+        Quran Recitation Classes
+      </h3>
+      <p class="text-gray-700">
+        Learn proper Quran reading with correct pronunciation and fluency.
+      </p>
+    </article>
+
+    <!-- Tajweed Courses -->
+    <article
+      class="bg-white p-5 rounded-lg shadow-md focus-within:ring-2 ring-blue-600"
+      aria-labelledby="service-tajweed"
+    >
+      <Image
+        src={quranTajweed}
+        alt="Tajweed learning illustration"
+        format="webp"
+        width={600}
+        height={600}
+        class="w-full h-48 object-cover rounded-md mb-4"
+        loading="lazy"
+      />
+      <h3 id="service-tajweed" class="text-xl font-semibold text-gray-900 mb-2">
+        Tajweed Courses
+      </h3>
+      <p class="text-gray-700">
+        Master the rules of Tajweed to recite the Quran beautifully and
+        accurately.
+      </p>
+    </article>
+
+    <!-- Hifz Program -->
+    <article
+      class="bg-white p-5 rounded-lg shadow-md focus-within:ring-2 ring-blue-600"
+      aria-labelledby="service-hifz"
+    >
+      <Image
+        src={quranMemorization}
+        alt="Quran memorization (Hifz) illustration"
+        format="webp"
+        width={600}
+        height={600}
+        class="w-full h-48 object-cover rounded-md mb-4"
+        loading="lazy"
+      />
+      <h3 id="service-hifz" class="text-xl font-semibold text-gray-900 mb-2">
+        Hifz (Memorization) Program
+      </h3>
+      <p class="text-gray-700">
+        Step-by-step guidance to memorize the Quran with regular revision.
+      </p>
+    </article>
+
+    <!-- Noorani Qaida -->
+    <article
+      class="bg-white p-5 rounded-lg shadow-md focus-within:ring-2 ring-blue-600"
+      aria-labelledby="service-qaida"
+    >
+      <Image
+        src={nooraniQaida}
+        alt="Noorani Qaida beginner learning illustration"
+        format="webp"
+        width={600}
+        height={600}
+        class="w-full h-48 object-cover rounded-md mb-4"
+        loading="lazy"
+      />
+      <h3 id="service-qaida" class="text-xl font-semibold text-gray-900 mb-2">
+        Noorani Qaida Lessons
+      </h3>
+      <p class="text-gray-700">
+        Perfect for beginners to learn Arabic letters and basic Quranic reading.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- <script>
+  import { animateServices } from "../lib/services.js";
+
+  window.addEventListener("DOMContentLoaded", () => {
+    animateServices();
+  });
+</script> -->

@@ -1,0 +1,133 @@
+---
+import img1 from "../assets/banner_image (1).png";
+import img2 from "../assets/banner_image (2).png";
+import img3 from "../assets/banner_image (3).png";
+import img4 from "../assets/banner_image (4).png";
+import img5 from "../assets/banner_image (5).png";
+import img6 from "../assets/banner_image (6).png";
+import img7 from "../assets/banner_image (7).png";
+import mimg1 from "../assets/banner_image_mobile (1).png";
+import mimg2 from "../assets/banner_image_mobile (2).png";
+import mimg3 from "../assets/banner_image_mobile (3).png";
+import mimg4 from "../assets/banner_image_mobile (4).png";
+import mimg5 from "../assets/banner_image_mobile (5).png";
+
+import { Image } from "astro:assets";
+---
+
+<section
+  class="relative h-[50dvh] lg:h-dvh w-full overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600"
+  aria-label="Image carousel"
+>
+  <div id="carousel" class="relative w-full h-full hidden lg:block">
+    <div class="slide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={img1}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+
+    <div class="slide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={img2}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="slide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={img3}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="slide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={img4}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="slide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={img5}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="slide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={img6}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="slide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={img7}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+  </div>
+  <div id="carousel-mobile" class="relative w-full h-full block lg:hidden">
+    mobile
+    <div class="mslide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={mimg1}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+
+    <div class="mslide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={mimg2}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="mslide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={mimg3}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="mslide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={mimg4}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+    <div class="mslide absolute top-1/2 left-1/2 h-fit">
+      <Image
+        src={mimg5}
+        alt="Quran 1"
+        class="carousel-img object-contain w-full"
+      />
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .carousel-img {
+    /* Main Image Size */
+    width: 100%;
+    max-width: 80vw;
+
+    height: auto;
+    max-height: 70vh;
+
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+
+    /* Crucial: prevents layout shift */
+    display: block;
+  }
+</style>
+
+<script src="../lib/banner.js"></script>
